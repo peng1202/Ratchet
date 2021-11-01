@@ -1,5 +1,5 @@
 {
-    "name": "peng/ratchet"
+    "name": "pengpenga/ratchet"
   , "type": "library"
   , "description": "PHP WebSocket library"
   , "keywords": ["WebSockets", "Server", "Ratchet", "Sockets", "WebSocket"]
