@@ -59,6 +59,6 @@ class HttpRequestParser implements MessageInterface {
      * @return \Psr\Http\Message\RequestInterface
      */
     public function parse($headers) {
-        return gPsr\parse_request($headers);
+        return gPsr\Message::parseRequest($headers);
     }
 }

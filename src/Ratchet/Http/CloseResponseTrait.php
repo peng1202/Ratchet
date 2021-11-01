@@ -16,7 +16,7 @@ trait CloseResponseTrait {
             'X-Powered-By' => \Ratchet\VERSION
         ], $additional_headers));
 
-        $conn->send(gPsr\str($response));
+        $conn->send(gPsr\Message::toString($response));
         $conn->close();
     }
 }

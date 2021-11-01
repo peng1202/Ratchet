@@ -116,7 +116,7 @@ class WsServer implements HttpServerInterface {
 
         $response = $this->handshakeNegotiator->handshake($request)->withHeader('X-Powered-By', \Ratchet\VERSION);
 
-        $conn->send(gPsr\str($response));
+        $conn->send(gPsr\Message::toString($response));
 
         if (101 !== $response->getStatusCode()) {
             return $conn->close();
